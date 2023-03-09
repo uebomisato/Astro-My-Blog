@@ -19,9 +19,10 @@ html {
     margin: 1rem 0;
     font-size: 2.5rem;
   }
-
-/* nav styles */
-.hamburger {
+  
+  /* nav styles */
+  
+  .hamburger {
     padding-right: 20px;
     cursor: pointer;
   }
@@ -33,8 +34,8 @@ html {
     margin-bottom: 10px;
     background-color: #ff9776;
   }
-
-.nav-links {
+  
+  .nav-links {
     width: 100%;
     top: 5rem;
     left: 48px;
@@ -53,7 +54,8 @@ html {
     text-transform: uppercase;
   }
   
-  .nav-links a:hover, a:focus {
+  .nav-links a:hover,
+  a:focus {
     background-color: #ff9776;
   }
   
@@ -74,9 +76,17 @@ html {
       display: inline-block;
       padding: 15px 20px;
     }
-
-    .hamburger {
-        display: none;
-      }
   
+    .hamburger {
+      display: none;
+    }
+  }
+  
+  html.dark {
+    background-color: #0d0950;
+    color: #fff;
+  }
+  
+  .dark .nav-links a {
+    color: #fff;
   }
