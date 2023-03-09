@@ -6,6 +6,6 @@ export async function get() {
         description: 'My journey learning Astro',
         site: 'https://my-blog-site.netlify.app',
         items: await pagesGlobToRssItems(import.meta.glob('./**/*.md')),
-        customData: `<language>en-us</language>`,
+        customData: `<language>en-jp</language>`,
     });
 }
