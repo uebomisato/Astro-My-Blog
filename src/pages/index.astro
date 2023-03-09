@@ -2,18 +2,21 @@
 import '../styles/global.css';
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
+
+const pageTitle = 'Home Page';
 ---
 <Navigation />
 <html lang="jp">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type ="image/svg+xml" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content = {Astro.generator} >
-    <title>Astro</title>
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
   </head>
   <body>
-    <h1>My Blog</h1>
+    <Navigation />
+    <h1>{pageTitle}</h1>
     <Footer />
   </body>
 </html>
